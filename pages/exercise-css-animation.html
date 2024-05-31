@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: blueviolet;
+            animation: up-down 3s linear infinite;
+            /* animation-duration: 5s; */
+            /* display: inline-block;  --------  meka yeduwama section ekata flex dnna ona ne---------- */
+        }
+        .section{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 50px;
+            position: relative;
+            margin-top: 300px;
+            margin-left: 450px;
+        }
+        .section > div :nth-child(1) {
+            animation-delay: 0s;
+        }
+        .section > div:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        .section > div:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        .section > div:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+        .section > div:nth-child(5) {
+            animation-delay: 1.2s;
+        }
+        @keyframes up-down{
+    
+            
+            0%{
+               transform: translateY(0);
+               /* animation-duration: 5s; */
+               /* animation-timing-function: ease-in ; */
+              
+            }
+            50%{
+               transform: translateY(-100px);
+               /* animation-duration: 10s; */
+               /* animation-delay: 10s; */
+            }
+            100%{
+               transform: translateY(0);
+               /* animation-duration: 40s; */
+               /* animation-delay: 50s; */
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+   </section>
+</body>
+</html>

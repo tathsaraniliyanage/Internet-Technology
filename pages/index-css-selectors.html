@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lession-css-selectors</title>
+    <style>
+        /* 1. element selector*/
+        h1 { 
+            color: purple;
+        }
+        
+        h2 , h3 , h4{
+            color: rgb(40, 223, 247);
+        }
+        /* 2.  id delector*/
+        #main-heading{
+            color: rgb(255, 147, 165);
+        }
+        /*  3. class selector */
+        .heading-selector{
+            color: rgb(58, 216, 58);
+        }
+        /*  4. attrivute selector*/
+        input[type="text"]{
+            background-color: aquamarine;
+        }
+        /*  5.  pseudo class selector */
+        button:hover{
+            background-color: rgb(109, 81, 107);
+            color: rgb(255, 255, 255);
+        }
+        /*  6.  pseud3jo element selector */
+        p::first-line{
+            color: brown;
+            font-weight: bold;
+        }
+        /*  7. Discendant Selector ( white space condinator) */
+        div p{
+            color: tomato;
+
+        }
+        div h4{
+            color: blueviolet;
+        }
+        div div h4{
+            color: darkorange;
+        }
+        /*  8. Child Selector */
+        div h5{
+             font-weight: bold;
+             font-style: italic;
+             color: seagreen;
+        }
+        /*  9. adjacent sibling selector */
+        /*h3 tag ek lgama tyna p tag ekta use karai */
+        h2 + p{
+           background-color: rgb(255, 147, 165);
+        }
+        /* 10.  General sibling selector (~) */
+        /*h3 ek lg tyna okkoma p tag wlata use krai */
+        h3 ~ p {
+            background-color: rgb(206, 245, 148);
+        }
+    </style>
+</head>
+<body>
+    <h1>css selectors</h1>
+
+    ======= 1. Element Selector =======
+
+    <h2>Element Selector</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+
+    ======= 2. ID Selector =======
+
+    <h2 id="main-heading">ID Selector</h2>
+
+    ======= 3. Class Selector =======
+
+    <h2  class="heading-selector">class selector</h2>
+    <h2  class="heading-selector">class selector</h2>
+    <h3  class="heading-selector">class selector</h3>
+    
+    ======= 4.Attribute Selector =======
+
+    <br/>
+       <input type="text" placeholder="Enter your full name"> 
+       <input type="text"  placeholder="enter your age">
+    <br/>   
+       <input type="text"  placeholder="enter your tel">
+    <br/>
+
+    ======= 5. pseudo classes Selector =======
+    <br/>
+    <button>Click Here</button>
+    <br/>
+
+
+    ======= 6.pseudo Element Selector =======
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim delectus perspiciatis molestias impedit veritatis libero ex ratione, necessitatibus aspernatur quo, totam ut voluptatem! Tempora laudantium illum fuga eum ipsa?</p>
+
+    
+    ======= 7.Discendant Selector ( white space condinator) =======
+    <div>
+        <div>
+            <h4>HELLO</h4>
+        </div>
+       <h4>HELLO</h4>
+         <div>
+            <h4>HELLO</h4>
+         </div>
+    </div>
+
+
+    ======= 8. Child Selector =======
+    <div>
+        <h5>Java</h5>
+        <h5>Python</h5>
+        <h5>JavaScript</h5>
+        <h5>TypeScript</h5>
+    </div>
+
+
+    ======== 9. adjacent sibling selector =======
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reprehenderit exercitationem rerum quia, temporibus expedita reiciendis maxime, iusto commodi, hic corrupti ducimus debitis recusandae non explicabo. Quisquam ex soluta magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi natus a tempora repellat dolor deserunt illo eaque facere impedit, necessitatibus aspernatur veniam omnis, perferendis explicabo tenetur ipsa debitis fugit quisquam!</p>
+ 
+    ======= 10.General sibling selector (~) =======
+    <h3>Heading 3</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus illum, autem facilis animi dolorum expedita! Sapiente amet aliquid consequuntur, reprehenderit nulla similique laudantium, dicta laboriosam, sint placeat cumque iure sit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores blanditiis illum consectetur est, explicabo accusantium repellat saepe qui pariatur dolor illo hic modi nisi adipisci. Illo, itaque eius? Necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequatur tempora magnam laudantium odio? Nostrum asperiores aperiam enim dolorem similique officiis at, dicta dolorum iste, cumque in magni a alias!</p>
+
+</body>
+</html>

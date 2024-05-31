@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-css-Transitions</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(207, 112, 245);
+            margin: 200px auto;
+            /* transition-property: width; */
+
+            /* transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease;
+            transition-delay: 2s; */
+
+            transition: width 3s ease 2s;
+
+
+        }
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 57, 90);
+        }
+        p{
+            transition: width 3s ease ;
+        }
+        p:hover{
+            color:  rgb(236, 10, 63);
+            font-size: 40px;
+            /* font-family: italic;  */
+           font-style: italic;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>Hello world!!!</p>
+</body>
+</html>

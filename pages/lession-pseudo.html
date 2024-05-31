@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lession-pseudo</title>
+    <style>
+        button{
+            background-color: rgb(18, 6, 23);
+            color: white;
+
+        }
+        button:hover{
+          background-color:crimson;
+          cursor: pointer;
+        }
+        button:active{
+           background-color: yellow; 
+           color: black;
+        }
+        li:first-child{
+            color: blueviolet;
+        }
+        li:nth-child(2){
+            color: rgb(105, 196, 91);
+        }
+        li:nth-child(3){
+            color: rgb(249, 118, 140);
+        }
+        li:last-child{
+            color: mediumaquamarine;
+        }
+        /*Pseduo Eelment styling*/
+        p::before{
+            content: "Read This...";
+            color: rgb(204, 150, 179);
+        }
+        p::after{
+            content: "The End";
+            color: rgb(240, 121, 37);
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: rgb(255, 0, 111);
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>lession pesudo</h1>
+    <h2>pseudo classes</h2>
+    <button>Click Here</button>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <h2>pseudo Elements</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam error aspernatur ea exercitationem architecto! Harum vitae excepturi sit alias est placeat at illum soluta temporibus nam, quos maxime dicta dolore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam error aspernatur ea exercitationem architecto! Harum vitae excepturi sit alias est placeat at illum soluta temporibus nam, quos maxime dicta dolore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam error aspernatur ea exercitationem architecto! Harum vitae excepturi sit alias est placeat at illum soluta temporibus nam, quos maxime dicta dolore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam error aspernatur ea exercitationem architecto! Harum vitae excepturi sit alias est placeat at illum soluta temporibus nam, quos maxime dicta dolore.</p>
+  
+</body>
+</html>

@@ -1,0 +1,41 @@
+p{
+    color: rgb(179, 68, 68);
+}
+.content{
+    color: blueviolet;
+}
+#content-id{
+ 
+   color: rgb(48, 0, 48);
+}
+h4{
+    color: aquamarine;
+}
+.card-title{
+    color: rgb(0, 255, 170);
+}
+#receipe-card-title{
+    color: blue;
+}
+div h4{
+    color: rgb(255, 140, 0);
+}
+
+div:card-title{
+    color: rgb(52, 27, 27);
+}
+#receipe-card-title{
+  color: blue;
+} 
+#receipe card-content{
+    color: blueviolet;
+}
+.card-title{
+    color: crimson;
+}
+.card-content{
+    color: forestgreen;
+}
+div #receipe-heading{
+    color: chartreuse;
+}

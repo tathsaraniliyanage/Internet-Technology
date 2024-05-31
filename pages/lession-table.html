@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-table</title>
+    <style>
+        table{
+            background-color: blueviolet;
+            border: 5px solid rgb(226, 43, 119);
+            width: 300px;
+        }
+        th{
+            background-color: deeppink;
+        }
+        td{
+            background-color: aqua;
+        }
+     </style>
+</head>
+<body>
+    <!--- table with head and body --->
+    <p>===== Table with head and body ====</p>
+    <table  style="border: 2px solid rgb(238, 194, 0)">
+        <thead>
+            <tr>
+                <th>first name</th>
+                <th>last name</th>
+                <th>phone</th>
+                <th>email</th>
+                <th>city</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>john</td>
+                <td>doe</td>
+                <td>45465645453454</td>
+                <td>gfgf@gmail.com</td>
+                <td>galle</td>
+            </tr>
+            <tr>
+                <td>joni</td>
+                <td>abc</td>
+                <td>45465645453352</td>
+                <td>abcd@gmail.com</td>
+                <td>matara</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+
+<body>
+     <!--- table with head , body and footer--->
+     <p>===== Table with head , body and footer ====</p>
+    <table style="border: 2px solid rgb(255, 182, 80)">
+        <thead>
+            <tr>
+                <th>Item name</th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>  
+            <tr>
+                <td>sunlight</td>
+                <td>5</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>wonderlight</td>
+                <td>10</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>15</td>
+                <td>6000</td>
+            </tr>
+        </tbody>  
+     <tfoot></tfoot>
+    </table>
+
+     <!--- merge columns --->
+     <p>===== merge columns ====</p>
+    <table style="width: 320px; text-align: center;">
+        <tr style="height: 80px;">
+            <td colspan="2">1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr  style="height: 80px;">
+            <td>5</td>
+            <td colspan="3">6</td>
+           
+        <tr  style="height: 80px;">
+            <td>9</td>
+            <td colspan="2">10</td>
+            
+            <td>12</td>
+        </tr>
+        <tr  style="height: 80px;">
+           
+            <td colspan="3">13</td>
+            <td>16</td>
+        </tr>
+    </table>
+
+    <!--- merge rows --->
+    <p>===== merge rows ====</p>
+    <table  style="width: 320px; text-align: center;">
+        <tr style="height: 80px;">
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr  style="height: 80px;">
+            
+            <td rowspan="3">6</td>
+            <td>7</td>
+            <td rowspan="3">8</td>
+           
+           
+        <tr  style="height: 80px;">
+            <td rowspan="2">9</td>
+           
+            <td>11</td>
+            
+
+        </tr>
+        <tr  style="height: 80px;">
+          
+           
+            <td>15</td>
+            
+        </tr>
+    </table>
+    
+
+</body>
+</html>

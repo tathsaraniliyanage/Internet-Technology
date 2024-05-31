@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+        width: 150px;
+        height: 150px;
+        background-color: pink;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: darkorange;
+        font-size: 60px;
+        text-align: center;
+       }
+       .box1{
+        background-color: rgb(233, 254, 247);
+       }
+       .box2{
+        background-color: rgb(111, 255, 207);
+       }
+       .box3{
+        background-color: rgb(0, 143, 98);
+       }
+      .box4{
+        background-color: rgb(20, 46, 38);
+      }
+      
+      .container{
+        border: 10px solid  black; 
+        height: 600px;
+        display: flex;
+        /* flex-direction: row;  = by default*/
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        flex-direction: row; /* main access ek thiras. thiras akshen center kirimata use krna property ek = justify content, ek center krma hri*/
+        /* justify-content: space-evenly; */
+        /* align-items: center;
+        justify-content: center; */
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: row;
+        /* justify-content: center; */
+        
+        /* row-gap: 12px; */
+        /* column-gap: 12px; */
+         gap: 12px; 
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box1">5</div>
+    <div class="box box2">6</div>
+    <div class="box box3">7</div>
+    <div class="box box4">8</div>
+    <div class="box box1">9</div>
+    <div class="box box2">10</div>
+    <div class="box box3">11</div>
+    <div class="box box4">12</div>
+</div>
+</body>
+</html>

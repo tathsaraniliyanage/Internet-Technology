@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div> 
+
+
+
+   
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // document.addEventListener('DOMContentLoaded', function(){
+        //     console.log('executes ones the dom is fully loaded -js')
+            // document.getElementById('aaa').style.backgroundColor='red'
+        // })
+
+            $(document).ready(function(){
+                console.log('executes ones the dom is fully loaded - jQuery')   
+               
+
+                $('#box').css('background-color' , 'red');
+                $('#box').css('border-color' , 'yellow');
+                $('#box').addClass('Rectangle')
+            })
+
+   
+       
+    </script>
+</body>
+</html>

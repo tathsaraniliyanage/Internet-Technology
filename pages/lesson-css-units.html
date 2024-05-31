@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-units</title>
+    <style >
+       .box{
+        width: 400px;
+        height: 100px;
+        background-color: rgb(176, 244, 248);
+        background: linear-gradient(rgb(63, 255, 63) rgb(255, 45, 45));
+        border: 1px solid rgb(16, 14, 14) ;
+        margin-top: 12px;
+       }
+       .box-pixels{
+        width: 400px; 
+       }
+       .box-percentage{
+        width: 50%;
+       }
+
+       .box1{
+        width: 40%;
+        /*width: 400px;*/
+        height: 200px;
+        background-color: rgb(199, 139, 255);
+       }
+       .box2{
+        width: 80%;
+        height: 50px;
+        background-color: rgb(247, 96, 142);
+       }
+       .box3{
+        width: 50%;
+        height: 50px;
+       }
+       body{
+
+       }
+       .box4{
+        width: 80%;
+        height: 50px;
+        background-color: rgb(195, 10, 66);
+       }
+    </style>
+</head>
+<body>
+  <div class="box box-pixels">pixels</div>
+     <div class="box box-percentage">percentage</div>
+     <hr>
+
+     <div class="box box1">
+         hello1
+        <div class="box box2"> Hello2 </div>
+        <div class="box box3"> Hello3</div>
+     </div>
+     
+     <div class="box4">view port width</div>
+
+     <div style="font-size: 1rem; background-color: darkorange;">HELLO</div>
+     <div style="font-size: 2rem; background-color: darkorange;">HELLO</div>
+     <div style="font-size: 3rem; background-color: darkorange;">HELLO</div>
+     <div style="font-size: 4rem; background-color: darkorange;">HELLO</div>
+     <div style="font-size: 5rem; background-color: darkorange;">HELLO</div>
+
+    </br>
+
+    
+   <div style="font-size: 10px; background-color: rgb(115, 255, 96);">
+       ======    em    ======
+     <div style="font-size: 1em; ">HELLO</div>
+     <div style="font-size: 2em; ">HELLO</div>
+     <div style="font-size: 3em; ">HELLO</div>
+     <div style="font-size: 4em; ">HELLO</div>
+     <div style="font-size: 5em; ">HELLO</div>
+    </div>
+    </body>
+</html>
